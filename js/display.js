@@ -14,7 +14,7 @@ const menuList = document.createElement('ul');
 
 
 const MenuItems = [
-    { title: 'Home', link: './Index.html' },
+    { title: 'Home', link: './index.html' },
     { title: 'Blogs', link: './Blogs.html' },
     { title: 'About', link: './About.html' },
     { title: 'Credits', link: './Credits.html' },
