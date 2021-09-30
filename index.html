@@ -4,7 +4,10 @@
 <head>
     <title>Game State SA Homepage</title>
     <base href="./" target="_self">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="./js/display.js" type="text/javascript" defer></script>
+    <script src="./js/D3BarGraphs.js" type="text/javascript" defer></script>
+    <script src="./js/D3PieGraph.js" type="text/javascript" defer></script>
     <link rel="stylesheet" type="text/css" href="./GS.css">
     <link rel="icon" href="./Images/Logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +21,20 @@
     <main>
         <article>
             <h1>The Big Data</h1>
+            <h2>Where Are We Making Our Games?</h2>
+            <button id="geoBarPlotsButton" onclick="SwitchData()">
+                Show Data By Province
+            </button>
 
+            <div class="graphHolder">
+                <div id="geoBarPlots" class="d3Graph">
+                    <h3 id="geoBarPlotsHeading">Total Number of Game And Animation Studios by City, 2018 [1]</h3>
+                    <div id="geoBarPlotsInside" class="d3Graph"> </div>
+                </div>
+                <div id="gamePieGraph" class="d3Graph" style="text-align:center;">
+                    <h3 id="geoBarPlotsHeading">Total Number of Games Published by Province [3]</h3>
+                </div>
+            </div>
         </article>
     </main>
 </body>
