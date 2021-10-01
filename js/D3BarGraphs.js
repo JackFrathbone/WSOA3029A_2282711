@@ -36,18 +36,18 @@ function SwitchData() {
 function CreateGraph(currentData) {
     document.getElementById("geoBarPlotsInside").innerHTML = "";
 
-
-
-
     const width = 900;
     const height = 450;
+
     const margin = { top: 50, bottom: 50, left: 50, right: 50 };
 
     const svg = d3.select('#geoBarPlotsInside')
         .append('svg')
+        .classed("svg-container", true)
         .attr('width', width - margin.left - margin.right)
         .attr('height', height - margin.top - margin.bottom)
-        .attr("viewBox", [0, 0, width, height]);
+        .attr("viewBox", [0, 0, width, height])
+        .attr("preserveAspectRatio", "xMinYMin meet");
 
     const x = d3.scaleBand()
         .domain(d3.range(currentData.length))

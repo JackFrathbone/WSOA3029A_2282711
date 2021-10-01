@@ -30,8 +30,6 @@ for (let item of MenuItems) {
     menuList.appendChild(li);
 }
 
-
-
 nav.appendChild(menuList);
 ///////////////////////////////////////
 const footer = document.createElement('footer');

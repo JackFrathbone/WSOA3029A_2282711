@@ -34,7 +34,6 @@ header{
     margin-bottom: 0%;
 }
 
-
 a{
     color: #FCDD09;
     text-decoration: unset;
@@ -61,13 +60,13 @@ font-size: 5em;
     list-style-type: none;
     display:flex;
     font-family: 'Lato', sans-serif;
-    font-size: 50px;
+    font-size: 3em;
     margin: 0%;;
 }
 
 .menu li{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
     color: black;
 }
 
@@ -154,6 +153,14 @@ p{
     margin-right: 5%;
 }
 
+.graphHolder{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    font-family: 'Lato', sans-serif;
+}
+
 .d3Graph{
     flex: 1 1 auto;
     margin-left: 2.5%;
@@ -233,14 +240,6 @@ button:active{
     background-color: #630B57;
 }
 
-.graphHolder{
-    display:flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
-    font-family: 'Lato', sans-serif;
-}
-
 footer{
     background-color: white;
     display: flex;
@@ -258,9 +257,25 @@ footer p{
 color: black;
 }
 
-@media(max-width: 600px) {
-    nav{
-        display: none;
+.svg-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+@media(max-width: 1024px) {
+
+    .menu ul{
+        list-style-type: none;
+        display:flex;
+        font-family: 'Lato', sans-serif;
+        font-size: 2em;
+        padding: 0%;
+    }
+    
+    .menu li{
+        padding-left: 2%;
+        padding-right: 2%;
+        color: black;
     }
 
     .siteTitle{
@@ -287,3 +302,45 @@ color: black;
             font-size: medium;
         }
 }
+
+@media(max-width: 700px) {
+
+    .menu ul{
+        list-style-type: none;
+        display:flex;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.4em;
+        padding: 0%;
+    }
+    
+    .menu li{
+        padding-left: 1%;
+        padding-right: 1%;
+        color: black;
+    }
+
+    .siteTitle{
+        font-size: xx-large;
+        }
+
+        main{
+            min-height: 35em;
+        }
+        
+        h1{
+            font-size: xx-large;
+        }
+        
+        h2{
+            font-size: larger;
+        }
+        
+        h3{
+            font-size: large;
+        }
+        
+        p{
+            font-size: medium;
+        }
+}
+

@@ -8,10 +8,12 @@ const radius = Math.min(pieWidth, pieHeight) / 2 - pieMargin;
 
 const svg = d3.select("#gamePieGraph")
     .append("svg")
+    .classed("svg-container", true)
     .attr("width", pieWidth)
     .attr("height", pieHeight)
     .append("g")
-    .attr("transform", `translate(${pieWidth / 2}, ${pieHeight / 2})`);
+    .attr("transform", `translate(${pieWidth / 2}, ${pieHeight / 2})`)
+    .attr("preserveAspectRatio", "xMinYMin meet");
 
 const color = d3.scaleOrdinal()
     .range(["#DA121A", "#00891F", "#0075FF", "#5FB500"])
