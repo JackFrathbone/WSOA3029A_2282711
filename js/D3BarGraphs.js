@@ -60,7 +60,7 @@ function CreateGraph(currentData) {
 
     svg
         .append("g")
-        .attr("fill", 'royalblue')
+        .attr("fill", '#DA121A')
         .selectAll("rect")
         .data(currentData.sort((a, b) => d3.descending(a.score, b.score)))
         .join("rect")
