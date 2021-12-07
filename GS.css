@@ -208,6 +208,12 @@ tr:nth-child(even) {
     color: black;
 }
 
+iframe{
+    padding: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
 .slidecontainer {
     display:flex;
     flex-direction:row;

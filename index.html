@@ -9,6 +9,7 @@
     <script src="./js/D3BarGraphs.js" type="text/javascript" defer></script>
     <script src="./js/D3PieGraph.js" type="text/javascript" defer></script>
     <script src="./js/D3GrowingCircles.js" type="text/javascript" defer></script>
+    <script src="./js/Artwork.js" type="text/javascript" defer></script>
     <link rel="stylesheet" type="text/css" href="./GS.css">
     <link rel="icon" href="./Images/Logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,6 +49,25 @@
                     <h3 id="growingCirceGraphYears">1997</h3>
                 </div>
             </div>
+
+            <h2>Employment</h2>
+            <div class="graphHolder">
+                <div id="APIMap" class="d3Graph">
+                    <h3>Gaming & Animation Studios that employ more than 15 people, 2017
+                        [5]</h3>
+                    <iframe src="https://cartes.io/embeds/maps/ac43a269-bdf1-410a-b4b9-afddc7c39685?type=map"
+                        width="70%" height="400" frameborder="0"></iframe>
+                </div>
+                <div id="Artwork" class="d3Graph" style="width:600px">
+                    <h3 id="ArtworkHeading" style="margin-bottom: 2%;">Total Jobs in Gaming Studios, 2017 (310) [6]</h3>
+                    <h4 id="ArtworkHeading">[Click to change] Each pixel is approximately one job</h4>
+                    <img id="ArtworkImg" src=".\Images\Art Pics\Total Gaming jobs.png"
+                        alt="Image of early website wireframe"
+                        style="width:350px;height:350px; image-rendering: pixelated; image-rendering: crisp-edges; margin-left: 5%;"
+                        onclick="SetArtworkImage()">
+                </div>
+            </div>
+
         </article>
     </main>
 </body>
